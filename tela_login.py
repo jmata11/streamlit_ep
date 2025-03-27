@@ -204,7 +204,7 @@ def show_login_page():
             st.session_state.authenticated = True
             st.session_state.page = 'principal'  # Altera para a página principal
             st.success("✅ Login realizado com sucesso!")
-            st.experimental_rerun()  # Força a recarga da página
+            st.rerun()  # Força a recarga da página
         else:
             st.error("❌ Usuário ou senha incorretos")
 
